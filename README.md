@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Arnavnemade1/arnavnemade1/main/assets/metrics.svg" width="830" alt="Key metrics: 8+ AI systems in production, 1,600+ contributions, 160 API endpoints, 0.800 sepsis AUROC" />
+  <img src="https://raw.githubusercontent.com/Arnavnemade1/arnavnemade1/main/assets/metrics.svg" width="830" alt="Key metrics: 8+ AI systems in production, 1,600+ contributions, 10+ hackathons won, 536 commits" />
 </p>
 
 ---
