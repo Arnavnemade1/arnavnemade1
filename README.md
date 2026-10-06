@@ -21,14 +21,9 @@
   Through ambitious ideas and thoughtful engineering, I aim to create technologies that shape the future and empower people to achieve more.</em>
 </p>
 
-<table align="center">
-<tr>
-<td align="center" width="25%"><h2>8+</h2><sub>AI systems<br/>in production</sub></td>
-<td align="center" width="25%"><h2>1,600+</h2><sub>contributions<br/>in the past year</sub></td>
-<td align="center" width="25%"><h2>160</h2><sub>API endpoints<br/>in AegisOS</sub></td>
-<td align="center" width="25%"><h2>0.800</h2><sub>sepsis AUROC on<br/>held-out patients</sub></td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Arnavnemade1/arnavnemade1/main/assets/metrics.svg" width="830" alt="Key metrics: 8+ AI systems in production, 1,600+ contributions, 160 API endpoints, 0.800 sepsis AUROC" />
+</p>
 
 ---
 
@@ -94,19 +89,9 @@ A high-throughput MCP server that turns real-time web streams into structured, g
 <h3 align="center">VELOCITY</h3>
 
 <div align="center">
-  <a href="https://github.com/arnavnemade1">
-    <img src="https://streak-stats.demolab.com?user=arnavnemade1&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1F6FEB&fire=58A6FF&currStreakLabel=58A6FF" height="170" alt="GitHub Streak" />
-  </a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/arnavnemade1">
-    <img src="https://github-readme-stats.vercel.app/api?username=arnavnemade1&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9" height="170" alt="GitHub Stats" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/arnavnemade1">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arnavnemade1&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" height="170" alt="Top Languages" />
-  </a>
+  <img src="https://streak-stats.demolab.com?user=arnavnemade1&theme=github-dark-blue&background=0D1117&stroke=21262D&border_radius=12&ring=1F6FEB&fire=58A6FF&currStreakLabel=58A6FF&currStreakNum=F0F6FF&sideNums=F0F6FF&sideLabels=8B949E&dates=6E7681" width="495" alt="GitHub Streak" />
+  <br/><br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arnavnemade1&layout=compact&card_width=495&hide_title=true&bg_color=0d1117&border_color=21262d&border_radius=12&text_color=c9d1d9" width="495" alt="Top Languages" />
 </div>
 
 ---
