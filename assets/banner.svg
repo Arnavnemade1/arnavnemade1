@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a14"/>
+      <stop offset="50%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#05070e"/>
+    </linearGradient>
+
+    <!-- Glowing Text Gradients -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="40%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="cyanGlow" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purpleGlow" cx="80%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.35"/>
+    </pattern>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -40; }
+    }
+    .pulse-dot {
+      animation: pulse 2.5s infinite ease-in-out;
+      transform-origin: center;
+    }
+    .flow-line {
+      stroke-dasharray: 4 4;
+      animation: dash 3s linear infinite;
+    }
+  </style>
+
+  <!-- Base Card with Border -->
+  <rect x="2" y="2" width="896" height="316" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="2" y="2" width="896" height="316" rx="16" fill="url(#grid)"/>
+
+  <!-- Atmospheric Glows -->
+  <circle cx="180" cy="90" r="160" fill="url(#cyanGlow)"/>
+  <circle cx="720" cy="140" r="200" fill="url(#purpleGlow)"/>
+
+  <!-- Neural / Agentic Swarm Constellation (Decorative Vector Lines & Nodes) -->
+  <g opacity="0.4">
+    <!-- Connecting Edges -->
+    <line x1="680" y1="50" x2="760" y2="85" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" class="flow-line"/>
+    <line x1="760" y1="85" x2="840" y2="60" stroke="#818cf8" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="760" y1="85" x2="790" y2="160" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.5" class="flow-line"/>
+    <line x1="790" y1="160" x2="850" y2="200" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="790" y1="160" x2="720" y2="220" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4"/>
+    <line x1="720" y1="220" x2="650" y2="180" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="650" y1="180" x2="680" y2="50" stroke="#a855f7" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="650" y1="180" x2="760" y2="85" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.2"/>
+
+    <!-- Agent Nodes -->
+    <circle cx="680" cy="50" r="4" fill="#38bdf8"/>
+    <circle cx="760" cy="85" r="5" fill="#818cf8"/>
+    <circle cx="840" cy="60" r="3" fill="#a855f7"/>
+    <circle cx="790" cy="160" r="6" fill="#38bdf8" filter="url(#glow)"/>
+    <circle cx="850" cy="200" r="3.5" fill="#818cf8"/>
+    <circle cx="720" cy="220" r="4.5" fill="#c084fc"/>
+    <circle cx="650" cy="180" r="4" fill="#38bdf8"/>
+
+    <!-- Subtle Agent Labels -->
+    <text x="798" y="164" fill="#94a3b8" class="mono" font-size="9" opacity="0.8">Agent.Orchestrator</text>
+    <text x="688" y="48" fill="#94a3b8" class="mono" font-size="8" opacity="0.7">Z3.Verifier</text>
+    <text x="728" y="232" fill="#94a3b8" class="mono" font-size="8" opacity="0.7">Causal.Replay</text>
+  </g>
+
+  <!-- Live Status Badge (Top-Left) -->
+  <g transform="translate(48, 36)">
+    <rect width="280" height="26" rx="13" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4.5" fill="#10b981" class="pulse-dot"/>
+    <text x="26" y="17" fill="#94a3b8" class="mono" font-size="11" font-weight="500">
+      SYSTEM STATUS: <tspan fill="#34d399">ACTIVE ARCHITECT</tspan>
+    </text>
+  </g>
+
+  <!-- Main Headline Name -->
+  <g transform="translate(48, 108)">
+    <text x="0" y="0" fill="url(#titleGrad)" class="sans" font-size="44" font-weight="800" letter-spacing="-1">
+      Arnav Nemade
+    </text>
+  </g>
+
+  <!-- Tagline / Role -->
+  <g transform="translate(48, 144)">
+    <text x="0" y="0" fill="#f8fafc" class="sans" font-size="18" font-weight="600" letter-spacing="-0.2">
+      Multi-Agent AI Architect <tspan fill="#38bdf8">·</tspan> Agentic Systems Engineer
+    </text>
+    <text x="0" y="24" fill="#94a3b8" class="sans" font-size="13.5" font-weight="400">
+      Building autonomous agent swarms, formally verified systems &amp; high-velocity developer infrastructure.
+    </text>
+  </g>
+
+  <!-- Key Achievement Badges / Highlight Pills -->
+  <g transform="translate(48, 206)">
+    <!-- Pill 1: YC -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="34" rx="8" fill="url(#pillGrad)" stroke="#f97316" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="14" y="21" class="sans" font-size="12" font-weight="600" fill="#fb923c">
+        🏆 Y Combinator Finalist
+      </text>
+      <text x="160" y="21" class="mono" font-size="10.5" fill="#fdba74">3rd Place</text>
+    </g>
+
+    <!-- Pill 2: NASA Space Apps -->
+    <g transform="translate(220, 0)">
+      <rect width="186" height="34" rx="8" fill="url(#pillGrad)" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="14" y="21" class="sans" font-size="12" font-weight="600" fill="#38bdf8">
+        🛰️ NASA Space Apps
+      </text>
+      <text x="135" y="21" class="mono" font-size="10.5" fill="#7dd3fc">Global Fin.</text>
+    </g>
+
+    <!-- Pill 3: Quantum Computing -->
+    <g transform="translate(416, 0)">
+      <rect width="182" height="34" rx="8" fill="url(#pillGrad)" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="14" y="21" class="sans" font-size="12" font-weight="600" fill="#c084fc">
+        ⚛️ Trapped-Ion QC
+      </text>
+      <text x="130" y="21" class="mono" font-size="10.5" fill="#e9d5ff">Entangle</text>
+    </g>
+
+    <!-- Pill 4: PicoCTF -->
+    <g transform="translate(608, 0)">
+      <rect width="180" height="34" rx="8" fill="url(#pillGrad)" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="14" y="21" class="sans" font-size="12" font-weight="600" fill="#34d399">
+        🛡️ PicoCTF Security
+      </text>
+      <text x="135" y="21" class="mono" font-size="10.5" fill="#6ee7b7">#21 Nat'l</text>
+    </g>
+  </g>
+
+  <!-- Bottom Command Bar / Quick Meta -->
+  <g transform="translate(48, 280)">
+    <text x="0" y="0" fill="#64748b" class="mono" font-size="11.5">
+      <tspan fill="#38bdf8">$</tspan> stack: <tspan fill="#cbd5e1">Python · TypeScript · Z3 Prover · Next.js · PyTorch · MCP</tspan>
+    </text>
+    <text x="590" y="0" fill="#64748b" class="mono" font-size="11.5">
+      📍 <tspan fill="#cbd5e1">Houston, TX</tspan> · <tspan fill="#a855f7">@arnavnemade1</tspan>
+    </text>
+  </g>
+</svg>
